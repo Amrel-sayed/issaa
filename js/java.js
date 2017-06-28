@@ -65,21 +65,26 @@ $(document).ready(function(){
     
     /* testmon auto slider end*/
     /* ------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /* start mixitup */
+        /*var mixer = mixitup('.sambles');*/
+    /* end mixitup */
+    /* ------------------------------------------------------------------------------------------------------------------------------------------------*/
     /* start prjects */
     $('.pro-list li').click(function(){
                             
             $(this).addClass('active').siblings().removeClass("active");
+            $($(this).data('filter')).addClass('act').siblings().not($(this).data('filter')).removeClass('act');
                             
                             });
      /* ------------------------------------------------------------------------------------------------------------------------------------------------*/
     /* start nice scroll */
     $('html').niceScroll({
        cursorwidth:12,
-cursoropacitymin:0.4,
-cursorcolor:'#6e8cb6',
-cursorborder:'none',
-cursorborderradius:4,
-autohidemode:'leave'
+        cursoropacitymin:0.4,
+        cursorcolor:'#6e8cb6',
+        cursorborder:'none',
+        cursorborderradius:4,
+        autohidemode:'leave'
     });
 
 

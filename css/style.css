@@ -255,6 +255,8 @@
 }
 .projects{
     padding-top: 50px;
+    overflow: hidden;
+    min-height: 835px;
 }
 .projects ul li {
     display: inline-block;
@@ -311,6 +313,12 @@
     right: 10px
 }
 .projects .types:hover .overlay{
+    display: block;
+}
+.art,.mob,.cof {
+    display: none;
+}
+.act{
     display: block;
 }
 
